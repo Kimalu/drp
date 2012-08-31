@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>MyDrp</title>
+<link rel="stylesheet" type="text/css" href="resources/css/ext-all.css" />
+<script type="text/javascript" src="script/extjs4/bootstrap.js"></script>
+<script type="text/javascript">
+	Ext.onReady(function(){
+		
+		var store = Ext.create('Ext.data.TreeStore', {
+		    root: {
+		        expanded: true, 
+		        text:"主菜单数据",
+		        children: [
+		            { text:"detention", leaf: false,children: [
+		                                                       { text:"detention", leaf: true },
+		                                                       { text:"homework", expanded: true, 
+		                                                           children: [
+		                                                               { text:"book report", leaf: true },
+		                                                               { text:"alegrbra", leaf: true}
+		                                                           ]
+		                                                       },
+		                                                       { text: "buy lottery tickets", leaf:true }
+		                                                   ] },
+		            { text:"homework", expanded: true, 
+		                children: [
+		                    { text:"book report", leaf: true },
+		                    { text:"alegrbra", leaf: true}
+		                ]
+		            },
+		            { text: "buy lottery tickets", leaf:true }
+		        ]
+		    }
+		});     
+
+		Ext.create('Ext.tree.Panel', {
+		    title: '主菜单',
+		    width: 200,
+		    height: 150,
+		    store: store,
+		    rootVisible: false,        
+		    renderTo: Ext.getBody()
+		});
+		
+	})
+</script>	
+</head>
+<body>
+<!-- 
+<div id='mianMenuTree'></div>
+ -->
+</body>
+</html>

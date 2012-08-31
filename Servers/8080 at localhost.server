@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/8080 at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="8080 at localhost" name="8080 at localhost" runtime-id="8080" server-type="org.eclipse.jst.server.tomcat.60" server-type-id="org.eclipse.jst.server.tomcat.60" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="12">
+  <list key="modules" value0="drp_extjs::org.eclipse.jst.jee.server:drp_extjs::jst.web::2.5"/>
+</server>
