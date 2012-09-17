@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config>
-	<db-info>
-		<driver-name>oracle.jdbc.driver.OracleDriver</driver-name>
-		<url>jdbc:oracle:thin:@localhost:1521:orcl</url>
-		<username>drp</username>
-		<password>drp</password>
-	</db-info>
-</config>
